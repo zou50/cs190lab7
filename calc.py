@@ -31,13 +31,18 @@ def mult(a, b):
 # a -- dividend
 # b -- divisor
 def div(a, b):
-    return a / b
-
+    return
 # Exponent function
 # a -- base
 # b -- exponent
 def exp(a, b):
 	return a ** b
+
+# Modulus function
+def mod(a, b):
+    return a % b
+
+
 # -------------------------------------------------------- #
 
 
@@ -73,9 +78,10 @@ while (True):
             print "Quotient: ", div(a, b)
         elif (op == "**"):
 	    print "Product: ", exp(a, b)
+        elif (op == "%"):
+            print "Remainder: ", mod(a, b)
         else:
             print "Invalid operation..."
-
     q = raw_input("Quit? [y/n] ")
     if (q == "y" or q == "Y"):
         break
